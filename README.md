@@ -1,3 +1,4 @@
-# Python-Code-Portfolio
-Python Code Portfolio that I will use to upload each Python program I write to my CTI-110 repository.
-
+# CTI 110 Repository
+Created for P1LAB1
+Chapa
+02/19/2023
