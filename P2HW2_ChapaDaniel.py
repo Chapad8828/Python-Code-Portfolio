@@ -1,32 +1,25 @@
-#CTI-110
-#P2HW2-List
-#Daniel_Chapa
-#02/26/2023
-#Enter module input
-modules1 = 50,60,70,80,90,100
-modules2 = 55,65,75,85,95,100
-modules3 = 60,65,70,75,80,85
-modules4 = 80,80,85,85,90,95
-modules5 = 55,65,75,85,95,100
-modules6 = 50,55,60,65,70,75
+# ask the user to enter grades for each module
+grade1 = float(input("Enter grade for Module 1: "))
+grade2 = float(input("Enter grade for Module 2: "))
+grade3 = float(input("Enter grade for Module 3: "))
+grade4 = float(input("Enter grade for Module 4: "))
+grade5 = float(input("Enter grade for Module 5: "))
+grade6 = float(input("Enter grade for Module 6: "))
 
-all_modules = modules1 + modules2 +modules3 + modules4 + modules5 + modules6
-#Display the number of grades, lowest grade, highest grade, sum of grades, and average of grades for all six modules
-print('The number of grades for all six modules:')
-print (len(all_modules))
-print('The lowest grade for all six modules:')
-print (min(all_modules))
-print('The highest grade for all six modules:')
-print (max(all_modules))
-print('The total of the grades for all six modules:')
-print (sum(all_modules))
-print('The average grade for all six modules:')
-print (sum(all_modules) / len(all_modules))
-print('\n')
-print('All grades')
-print (all_modules)
+print("--------------------Results---------------------------")
+# calculate and print the lowest grade
+lowest = min(grade1, grade2, grade3, grade4, grade5, grade6)
+print(f"Lowest Grade: {lowest}")
 
+# calculate and print the highest grade
+highest = max(grade1, grade2, grade3, grade4, grade5, grade6)
+print(f"Highest Grade: {highest}")
 
+# calculate and print the sum of grades
+total = grade1 + grade2 + grade3 + grade4 + grade5 + grade6
+print(f"Sum of Grades: {total}")
 
-
-
+# calculate and print the average grade to two decimal places
+average = total / 6
+print(f"Average Grade: {average:.2f}")
+print("------------------------------------------------------")
